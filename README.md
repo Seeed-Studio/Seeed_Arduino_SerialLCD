@@ -9,8 +9,7 @@ This LCD makes for a great gift, because it can be used for so many different pr
 For more information, please refer to [Grove_SerialLCD][1]
 
 ----
-This software is written by Frankie Chu for seeed studio<br>
-and is licensed under [The MIT License](http://opensource.org/licenses/mit-license.php). Check License.txt for more information.<br>
+This software is written by Frankie Chu for seeed studio and is licensed under The GPL v2 License.<br>
 
 Contributing to this software is warmly welcomed. You can do this basically by<br>
 [forking](https://help.github.com/articles/fork-a-repo), committing modifications and then [pulling requests](https://help.github.com/articles/using-pull-requests) (follow the links above<br>
