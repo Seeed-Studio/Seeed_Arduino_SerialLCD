@@ -1,7 +1,6 @@
-##Grove_SerialLCD
+##Serial LCD
 ![image](http://www.seeedstudio.com/wiki/images/5/5c/Lcdnew1.jpg)
-
-Grove - Serial LCD V1.0 is the new version of our serial LCDs. Attached on a single board is a 16x2 LCD and an embedded circuit based around a PIC HD44780. The on-board PIC takes a TTL serial input and prints the characters it receives onto the LCD. The library also allows for a number of special commands so you can clear the screen, adjust the backlight brightness, turn the display on/off, and more.
+Serial LCD V1.0 is the new version of our serial LCDs. Attached on a single board is a 16x2 LCD and an embedded circuit based around a PIC HD44780. The on-board PIC takes a TTL serial input and prints the characters it receives onto the LCD. The library also allows for a number of special commands so you can clear the screen, adjust the backlight brightness, turn the display on/off, and more.
 
 This LCD makes for a great gift, because it can be used for so many different projects! 
 
