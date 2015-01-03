@@ -207,6 +207,12 @@ void SerialLCD::print(const char b[])
     SoftwareSerial::write(b);
 }
 
+void SerialLCD::print(const char b[], uint8_t len)
+{
+    SoftwareSerial::write(SLCD_CHAR_HEADER);
+    SoftwareSerial::write(b, len);
+}
+
 void SerialLCD::print(unsigned long n, uint8_t base)
 {
     unsigned char buf[8 * sizeof(long)]; // Assumes 8-bit chars.

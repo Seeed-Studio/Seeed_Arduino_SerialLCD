@@ -90,6 +90,7 @@ public:
     void backlight(void);
     void print(uint8_t b);
     void print(const char[]);
+    void print(const char[], uint8_t length);
     void print(unsigned long n, uint8_t base);
 
 };
