@@ -91,7 +91,7 @@ public:
     void print(uint8_t b);
     void print(const char[]);
     void print(unsigned long n, uint8_t base);
-
+    void write(const char[], uint8_t length);
 };
 
 #endif
