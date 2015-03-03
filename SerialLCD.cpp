@@ -195,7 +195,6 @@ void SerialLCD::backlight(void)
     SoftwareSerial::write(SLCD_BACKLIGHT_ON);   
 }
 // Print Commands
-
 void SerialLCD::print(uint8_t b)
 {
     SoftwareSerial::write(SLCD_CHAR_HEADER);
@@ -209,26 +208,13 @@ void SerialLCD::print(const char b[])
 
 void SerialLCD::print(unsigned long n, uint8_t base)
 {
-    unsigned char buf[8 * sizeof(long)]; // Assumes 8-bit chars.
-    unsigned long i = 0;
-
-    if (base == 0) print(n);
-
-    else if(base!=0)
-    {
-        if (n == 0) {
-            print('0');
-            return;
-        }
-
-        while (n > 0) {
-            buf[i++] = n % base;
-            n /= base;
-        }
-
-        for (; i > 0; i--)
-            print((char) (buf[i - 1] < 10 ?
-                          '0' + buf[i - 1] :
-                          'A' + buf[i - 1] - 10));
-    }
+    SoftwareSerial::write(SLCD_CHAR_HEADER);
+    SoftwareSerial::print(n, base); 
 }
+
+void SerialLCD::write(const char b[], uint8_t len)
+{
+    SoftwareSerial::write(SLCD_CHAR_HEADER);
+    SoftwareSerial::write(b, len);
+}
+
