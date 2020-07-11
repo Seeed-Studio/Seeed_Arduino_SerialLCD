@@ -37,7 +37,7 @@ void loop() {
         // set the cursor position:
         slcd.setCursor(thisRow,thisCol);
         // print the letter:
-        slcd.print(thisLetter, BYTE);
+        slcd.print((char)thisLetter);
         delay(200);
       }
     }

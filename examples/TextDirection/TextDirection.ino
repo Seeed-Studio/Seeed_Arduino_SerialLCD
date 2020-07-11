@@ -47,7 +47,7 @@ void loop() {
     thisChar = 'a';
   }
   // print the character
-  slcd.print(thisChar, BYTE);
+  slcd.print((char)thisChar);
   // wait a second:
   delay(1000);
   // increment the letter:
